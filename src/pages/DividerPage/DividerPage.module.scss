@@ -1,0 +1,148 @@
+@import "@scss/variables.scss";
+
+.page {
+  background-color: #454545;
+  height: 100vh;
+  width: 100vw;
+  &__title {
+    font-family: $nunito;
+    font-weight: 600;
+    font-size: 32px;
+    text-align: center;
+    color: $accent;
+  }
+}
+
+.form {
+  width: 500px;
+  height: 300px;
+  margin: 0 auto;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &__wrapper {
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__label {
+    color: $white;
+    text-align: center;
+    font-weight: 400;
+    font-family: $roboto;
+    font-size: 24px;
+
+    &--divider {
+      color: $white;
+      background-color: $pink;
+      padding: 0 15px;
+      border-radius: 12px;
+      font-weight: 700;
+      font-family: $nunito;
+      font-size: 24px;
+    }
+  }
+
+  &__input {
+    width: 100px;
+    max-width: 300px;
+    height: 20px;
+    padding: 20px 15px;
+    border-radius: 10px;
+    background-color: $purple;
+    color: $white;
+    font-weight: 700;
+    font-family: $nunito;
+    font-size: 24px;
+  }
+
+  &__submit {
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+    height: 50px;
+    border-radius: 12px;
+    background-color: $accent;
+    color: $white;
+    font-weight: 700;
+    font-family: $nunito;
+    font-size: 24px;
+    transition: all 0.2s;
+
+    &:hover {
+      background-color: $pink;
+      transform: scale(1.01);
+    }
+  }
+}
+
+.table {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+  color: $white;
+  // background-color: $primary;
+
+  &__body {
+    display: inline-block;
+    align-items: center;
+    height: 500px;
+  }
+
+  &__data {
+    font-family: $nunito;
+    font-size: 20px;
+    font-weight: 700;
+    text-align-last: left;
+    // border: 1px solid black;
+
+    &--divide {
+      border-left: 3px solid $pink;
+      border-radius: 5px;
+    }
+
+    &--bottom {
+      // border-top: 3px solid $pink;
+      border-bottom: 3px solid $pink;
+      border-radius: 5px;
+    }
+
+    &--last {
+      border-bottom: 2px solid $pink;
+    }
+  }
+
+  &__row {
+    border-left: $pink 2px solid;
+  }
+}
+
+.actions {
+  font-family: $nunito;
+  color: $white;
+  font-size: 18px;
+  font-weight: 700;
+  display: flex;
+  // justify-content: center;
+  flex-direction: column;
+  height: 500px;
+}
+
+.result__wrapper {
+  width: 500px;
+  margin: 15px auto;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+
+  &--hidden {
+    visibility: hidden;
+    opacity: 0;
+  }
+}

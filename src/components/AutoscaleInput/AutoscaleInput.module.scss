@@ -1,0 +1,28 @@
+@import "@scss/variables.scss";
+
+.input::-webkit-outer-spin-button,
+.input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.input {
+  width: 100px;
+  max-width: 350px;
+  height: 25px;
+  padding: 20px 15px;
+  border-radius: 10px;
+  background-color: $purple;
+  color: $white;
+  font-weight: 700;
+  font-family: $nunito;
+  font-size: 20px;
+
+  &::placeholder {
+    color: $white;
+  }
+}
